@@ -9,7 +9,6 @@ function Login() {
   const { loggedIn, login } = useAccountContext();
   const navigate = useNavigate();
 
-  <form action="/action_page.php"></form>
 
   const attemptLogin = async () => {
     try {
@@ -30,8 +29,12 @@ function Login() {
     <Page>
       <div className="login-page">
         <h1>Login</h1>
+        <label for= "email">Email</label>
+        <input type="text" id="email" name="email"></input><br></br>
+        <label for= "password">Password</label>
+        <input type="password" id="password" name="password"></input><br></br>
         <button onClick={() => attemptLogin()}>
-          Login (as user set in code)
+          Login 
         </button>
         {message && <p>{message}</p>}
       </div>
