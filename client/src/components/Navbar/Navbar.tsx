@@ -27,7 +27,7 @@ function Navbar() {
       <style>{css}</style>
       <div className="navbar__logo">
         <Link to="/">
-          <img src={giraffeimg} alt="Girrafe lol" width="80" height="80"/>
+          <img class="navimage" src={giraffeimg} alt="Girrafe lol" width="80" height="80"/>
         </Link>
       </div>
       <div className="navbar__account">

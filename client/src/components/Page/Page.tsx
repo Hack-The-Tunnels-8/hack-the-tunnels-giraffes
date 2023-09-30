@@ -9,7 +9,7 @@ function Page({ children }: Props) {
   return (
     <>
       <Navbar />
-      <div className="page">{children}</div>
+      <div className="page adaptive">{children}</div>
       <Footer />
     </>
   );
