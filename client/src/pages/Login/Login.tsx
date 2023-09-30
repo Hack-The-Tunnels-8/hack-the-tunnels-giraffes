@@ -9,6 +9,8 @@ function Login() {
   const { loggedIn, login } = useAccountContext();
   const navigate = useNavigate();
 
+  <form action="/action_page.php"></form>
+
   const attemptLogin = async () => {
     try {
       const message = await login("admin@email.com", "password");
