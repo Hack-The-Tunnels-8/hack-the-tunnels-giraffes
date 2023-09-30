@@ -6,6 +6,11 @@ import "./Home.style.scss";
 
 function Home() {
   const [products, setProducts] = useState([]);
+  const css = `
+  .home-page__products{
+    font-family: cursive;
+  }
+  `
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,6 +24,7 @@ function Home() {
   return (
     <Page>
       <div className="home-page">
+        <style>{css}</style>
         <h1 className="home-page__title">Home</h1>
         <p>Hello World!</p>
         <h2>Products:</h2>
