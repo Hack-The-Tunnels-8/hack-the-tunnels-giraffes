@@ -34,7 +34,7 @@ function Login() {
         <label for= "password">Password</label>
         <input type="password" id="password" name="password"></input><br></br>
         <button onClick={() => attemptLogin()}>
-          Login 
+          Login   
         </button>
         {message && <p>{message}</p>}
       </div>
