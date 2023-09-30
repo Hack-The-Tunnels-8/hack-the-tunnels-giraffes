@@ -8,6 +8,7 @@ import {
   CreateProduct,
   Home,
   Login,
+  Page404,
   Product,
   SignUp,
 } from "./pages";
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>404</div>,
+    element: <Page404 />,
   },
 ]);
 
