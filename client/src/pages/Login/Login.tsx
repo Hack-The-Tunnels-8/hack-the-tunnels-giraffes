@@ -33,7 +33,7 @@ function Login() {
         <input type="text" id="email" name="email"></input><br></br>
         <label for= "password">Password</label>
         <input type="password" id="password" name="password"></input><br></br>
-        <button onClick={() => attemptLogin()}>
+        <button onClick="attemptLogin();">
           Login   
         </button>
         {message && <p>{message}</p>}
